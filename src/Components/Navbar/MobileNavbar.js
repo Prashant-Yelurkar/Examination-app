@@ -48,14 +48,6 @@ const MobileNavbar = (props) => {
         if (value.internal) return;
         return <NavTile {...value} key={index} setmobNav={setmobNav} />;
       })}
-      <div
-        onClick={() => {
-          removeTocken();
-          window.location.reload();
-        }}
-      >
-        Logout
-      </div>
     </div>
   );
 };

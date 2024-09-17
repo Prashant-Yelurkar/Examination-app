@@ -1,21 +1,9 @@
 import homeIcon from "@/Assets/icons/home.svg";
 import homeIconActive from "@/Assets/icons/home-active.svg";
-import editIcon from "@/Assets/icons/edit.svg";
-import editIconActive from "@/Assets/icons/edit-active.svg";
-import HistoryIcon from "@/Assets/icons/karatedohistory.svg";
-import HistoryIconActive from "@/Assets/icons/karatedohistory-active.svg";
-import JkjMasterIcon from "@/Assets/icons/jkjmasters.svg";
-import JkjMasterIconActive from "@/Assets/icons/jkjmasters-active.svg";
-import messageIcon from "@/Assets/icons/message.svg";
-import messageIconActive from "@/Assets/icons/message-active.svg";
-import photoIcon from "@/Assets/icons/photo.svg";
-import photoIconActive from "@/Assets/icons/photo-active.svg";
-import documentIcon from "@/Assets/icons/document.svg";
-import documentIconActive from "@/Assets/icons/document-active.svg";
-import aboutIcon from "@/Assets/icons/about.svg";
-import aboutIconActive from "@/Assets/icons/about-active.svg";
-import blockIcon from "@/Assets/icons/blocks.svg";
-import blockIconActive from "@/Assets/icons/blocks-active.svg";
+import examIcon from "@/Assets/images/exam.png";
+import examIconActive from "@/Assets/images/exam-active.png";
+import logout from "@/Assets/images/login.png";
+import logoutActive from "@/Assets/images/login-active.png";
 
 export const studentNavData = [
   {
@@ -26,30 +14,36 @@ export const studentNavData = [
   },
   {
     title: "Exam",
-    icon: homeIcon,
-    ActiveIcon: homeIconActive,
+    icon: examIcon,
+    ActiveIcon: examIconActive,
     link: "/student/exam",
   },
   {
     title: "exam Detail",
-    icon: homeIcon,
-    ActiveIcon: homeIconActive,
+    icon: examIcon,
+    ActiveIcon: examIcon,
     link: "/student/exam/[examId]",
     internal: true,
   },
   {
     title: "exam attempt",
-    icon: homeIcon,
-    ActiveIcon: homeIconActive,
+    icon: examIcon,
+    ActiveIcon: examIcon,
     link: "/student/exam/[examId]/attempt",
     internal: true,
   },
   {
     title: "exam Result",
-    icon: homeIcon,
-    ActiveIcon: homeIconActive,
+    icon: examIcon,
+    ActiveIcon: examIcon,
     link: "/student/exam/[examId]/result",
     internal: true,
+  },
+  {
+    title: "Logout",
+    icon: logout,
+    ActiveIcon: logoutActive,
+    link: "/logout",
   },
 ];
 
@@ -62,28 +56,28 @@ export const adminNavData = [
   },
   {
     title: "Exam",
-    icon: aboutIcon,
-    ActiveIcon: homeIconActive,
+    icon: examIcon,
+    ActiveIcon: examIconActive,
     link: "/admin/exam",
   },
   {
     title: "View Exam",
-    icon: aboutIcon,
-    ActiveIcon: homeIconActive,
+    icon: examIcon,
+    ActiveIcon: examIcon,
     link: "/admin/exam/[examId]",
     internal: true,
   },
   {
     title: "create Exam",
-    icon: aboutIcon,
-    ActiveIcon: homeIconActive,
+    icon: examIcon,
+    ActiveIcon: examIcon,
     link: "/admin/exam/create",
     internal: true,
   },
-  // {
-  //   title: "Results",
-  //   icon: homeIcon,
-  //   ActiveIcon: homeIconActive,
-  //   link: "/res",
-  // },
+  {
+    title: "Logout",
+    icon: logout,
+    ActiveIcon: logoutActive,
+    link: "/logout",
+  },
 ];
