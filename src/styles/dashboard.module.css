@@ -1,0 +1,24 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.sidebar {
+  flex: 0 1 auto;
+}
+
+.pages {
+  height: 100%;
+  flex: 1;
+  padding: 0px 10px 0px 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.footerSection {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}

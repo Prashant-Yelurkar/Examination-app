@@ -1,0 +1,12 @@
+.q_block {
+  padding: 10px 10px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+.op {
+  list-style: none;
+  padding-left: 10px;
+}
+/* .question {
+  padding-left: 10px;
+} */

@@ -1,0 +1,101 @@
+.mobilenavbar {
+  height: 100%;
+  position: fixed;
+  /* top: 80px; */
+  left: -100vw;
+  width: fit-content;
+  z-index: 2000;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  background: #808080;
+  backdrop-filter: blur(10px);
+  transition: 0.7s ease-in-out;
+}
+.menuItems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: 1s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.menuItems a {
+  text-decoration: none;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding: 10px 5px;
+}
+
+.menuItems span {
+  font-size: 19px;
+  transition: 1s;
+  padding-left: 20px;
+  opacity: 1;
+}
+
+.menu .menuItems span {
+  font-size: 0px;
+  padding-left: 0px;
+  opacity: 0;
+}
+
+.icons {
+  height: 30px;
+  width: auto;
+}
+.icons {
+  fill: blue;
+}
+.closeBar {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobilenavbar {
+    position: static;
+    width: fit-content;
+    transition: 0.5s ease-in-out;
+  }
+  .menuItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .closeBar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+  }
+  .closeBarIcon {
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .tab {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  .selectd {
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  .selectd a {
+    color: red;
+    font-size: 900;
+  }
+}
