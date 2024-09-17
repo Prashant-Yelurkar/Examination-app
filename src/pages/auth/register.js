@@ -39,6 +39,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("Clicked");
 
     if (!name || !password || !cmPassword || !email) {
       setAlertBox({ message: "All fields are required", type: "danger" });
