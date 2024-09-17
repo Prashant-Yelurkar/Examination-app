@@ -1,7 +1,10 @@
 import axios from "axios";
 import { getAuthToken } from "./TokenInitilizer";
 
-const baseURL = process.env.NEXT_PUBLIC_DEVELOPMENT_URL;
+const baseURL =
+  process.env.NODE_ENV === "development"
+    ? process.env.NEXT_PUBLIC_DEVELOPMENT_URL
+    : process.env.NEXT_PUBLIC_PRODUCTION_URL;
 
 export const myrouter = axios.create({
   baseURL: baseURL,
