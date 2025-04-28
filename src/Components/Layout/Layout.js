@@ -37,7 +37,7 @@ const Layout = ({ children, alerts, title, isExamStarted }) => {
       const token = getAuthToken();
       if (token) {
         const res = await validateJWT(token);
-        if (res.success) {
+        if (res?.success) {
           // console.log(res);
 
           setIsLoggedIn(true);
